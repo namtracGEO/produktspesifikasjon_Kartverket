@@ -3,7 +3,7 @@ output_directory: produktspesifikasjon
 product_slug: dybdedata_dekning
 updated: '2026-10-20'
 scopes:
-- name: Hybasapi.atgcp1-prod.kartverket.cloud
-  url: https://hybasapi.atgcp1-prod.kartverket.cloud/
+- name: Datamodell fra OGC API - Features
+  url: https://hybasapi.atgcp1-prod.kartverket.cloud/collections/surveys
   generator: ogc_feature_api
   description: OGC API-Features fra Kartverket
