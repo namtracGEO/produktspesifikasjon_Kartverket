@@ -230,6 +230,25 @@
         ],
         "deliveryScope": "Tjeneste"
       }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "GeoPackage: datamodell-fra-ogc-api-features",
+          "deliveryService": {
+            "serviceEndpoint": "https://raw.githubusercontent.com/namtracGEO/produktspesifikasjon_Kartverket/main/produktspesifikasjon/dybdedata-dekning/datamodell-fra-ogc-api-features/datamodell-fra-ogc-api-features.gpkg",
+            "serviceProperty": {
+              "type": "Fil",
+              "value": "Nedlasting"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GPKG"
+          }
+        ]
+      }
     }
   ],
   "metadataSection": {
@@ -273,7 +292,7 @@
     "datafangst_og_produksjon": 52,
     "vedlikehold": 3,
     "presentasjon": 0,
-    "leveranse": 35,
+    "leveranse": 41,
     "metadata": 15,
     "tilleggsinformasjon": 4,
     "datamodell": 92
