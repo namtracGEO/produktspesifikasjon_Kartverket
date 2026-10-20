@@ -124,7 +124,7 @@
     },
     {
       "specificationScope": {
-        "scopeIdentification": "Datamodell fra UML 20240501",
+        "scopeIdentification": "Datamodell fra UML dybdedata-1.0",
         "level": "dataset"
       }
     }
@@ -249,6 +249,25 @@
           }
         ]
       }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "GeoPackage: datamodell-fra-uml-dybdedata-1-0",
+          "deliveryService": {
+            "serviceEndpoint": "https://raw.githubusercontent.com/namtracGEO/produktspesifikasjon_Kartverket/main/produktspesifikasjon/dybdedata-dekning/datamodell-fra-uml-dybdedata-1-0/datamodell-fra-uml-dybdedata-1-0.gpkg",
+            "serviceProperty": {
+              "type": "Fil",
+              "value": "Nedlasting"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GPKG"
+          }
+        ]
+      }
     }
   ],
   "metadataSection": {
@@ -292,9 +311,9 @@
     "datafangst_og_produksjon": 52,
     "vedlikehold": 3,
     "presentasjon": 0,
-    "leveranse": 41,
+    "leveranse": 47,
     "metadata": 15,
     "tilleggsinformasjon": 4,
-    "datamodell": 92
+    "datamodell": 4305
   }
 }

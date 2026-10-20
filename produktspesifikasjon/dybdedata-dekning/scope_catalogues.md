@@ -8,12 +8,12 @@
 
 ➡️ [Se full datamodell for omfang "Datamodell fra OGC API - Features" (diagram per pakke og objektkatalog)](datamodell-fra-ogc-api-features/objektkatalog.html)
 
-### Datamodell - Datamodell fra UML 20240501
+### Datamodell - Datamodell fra UML dybdedata-1.0
 
 
 
-<a href="datamodell-fra-uml-20240501/datamodell-fra-uml-20240501_feature_catalogue.png" title="Klikk for stor visning"><img src="datamodell-fra-uml-20240501/datamodell-fra-uml-20240501_feature_catalogue.png" alt="Datamodell Datamodell fra UML 20240501" style="max-width: 100%; height: auto;" /></a>
+<a href="datamodell-fra-uml-dybdedata-1-0/datamodell-fra-uml-dybdedata-1-0_feature_catalogue.png" title="Klikk for stor visning"><img src="datamodell-fra-uml-dybdedata-1-0/datamodell-fra-uml-dybdedata-1-0_feature_catalogue.png" alt="Datamodell Datamodell fra UML dybdedata-1.0" style="max-width: 100%; height: auto;" /></a>
 
 
 
-➡️ [Se full datamodell for omfang "Datamodell fra UML 20240501" (diagram per pakke og objektkatalog)](datamodell-fra-uml-20240501/objektkatalog.html)
+➡️ [Se full datamodell for omfang "Datamodell fra UML dybdedata-1.0" (diagram per pakke og objektkatalog)](datamodell-fra-uml-dybdedata-1-0/objektkatalog.html)
