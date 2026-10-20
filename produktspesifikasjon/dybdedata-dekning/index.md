@@ -164,6 +164,7 @@ Datasettet tar utgangspunkt i Kartverkets oversikt over dekning sjømålte områ
 | --- | --- | --- | --- | --- |
 | OGC API-Features | [Lenke](https://hybasapi.atgcp1-prod.kartverket.cloud/) | OGC:API-Features | GeoJSON | landsfiler |
 | WMS-tjeneste | [Lenke](https://survey.kartverket.no/?service=WMS&request=GetCapabilities) | OGC:WMS | WMS, [{}] | landsfiler |
+| GeoPackage: datamodell-fra-ogc-api-features | [Lenke](https://raw.githubusercontent.com/namtracGEO/produktspesifikasjon_Kartverket/main/produktspesifikasjon/dybdedata-dekning/datamodell-fra-ogc-api-features/datamodell-fra-ogc-api-features.gpkg) | Nedlasting | GPKG |  |
 
 ## Metadata
 
