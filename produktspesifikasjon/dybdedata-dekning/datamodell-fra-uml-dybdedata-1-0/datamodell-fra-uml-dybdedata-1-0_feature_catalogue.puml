@@ -1,0 +1,163 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Dybdedata - dekning - Datamodell fra UML dybdedata-1.0 - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class Dybdekurve <<featureType>> {
+    + grense [1] : Kurve
+    + dybde [1] : Dybde
+  }
+
+  class Dybdepunkt <<featureType>> {
+    + posisjon [1] : Punkt
+    + dybde [1] : Dybde
+  }
+
+  abstract class FellesegenskaperDybdedataAreal <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + datafangstdato [0..1] : Date
+    + oppdateringsdato [1] : Date
+    + datauttaksdato [0..1] : Date
+    + kvalitet [0..1] : Posisjonskvalitet
+    + medium [0..1] : Medium
+    + digitaliseringsmålestokk [0..1] : Integer
+  }
+
+  class Kystkontur <<featureType>> {
+    + grense [1] : Kurve
+    + kysttype [0..1] : Kysttype
+  }
+
+  class "IkkeKartlagtSjømåltOmr" as IkkeKartlagtSj_m_ltOmr <<featureType>> {
+    + område [0..1] : Flate
+    + posisjon [0..1] : Punkt
+  }
+
+  class "IkkeKartlagtSjømåltGrense" as IkkeKartlagtSj_m_ltGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class BygningsmessigAnleggVann <<featureType>> {
+    + senterlinje [1] : Kurve
+  }
+
+  class FiktivDelelinje <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "MudretOmrådegrense" as MudretOmr_degrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class KystkonturTekniskeAnlegg <<featureType>> {
+    + beginLifespanVersion [1] : Date
+    + grense [0..1] : Kurve
+    + condition [1] : ConditionOfFacilityValue
+    + kystkonstruksjonstype [0..1] : Kystkonstruksjonstype
+    + kystreferanse [0..1] : Kystreferanse
+    + høyde [0..1] : Real
+    + inspireId [1] : Identifier
+  }
+
+  class Grunne <<featureType>> {
+    ' Ingen attributter
+  }
+
+  abstract class "AvgrensningLandSjø" as AvgrensningLandSj_ <<featureType>> {
+    ' Ingen attributter
+  }
+
+  abstract class FellesegenskaperDybdedataGrenserOgPunkter <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + datafangstdato [0..1] : Date
+    + oppdateringsdato [1] : Date
+    + datauttaksdato [0..1] : Date
+    + kvalitet [0..1] : Posisjonskvalitet
+    + medium [0..1] : Medium
+    + digitaliseringsmålestokk [0..1] : Integer
+  }
+
+  class Dataavgrensning <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "Skjær" as Skj_r <<featureType>> {
+    + posisjon [1] : Punkt
+  }
+
+  class "MudretOmråde" as MudretOmr_de <<featureType>> {
+    + område [0..1] : Flate
+    + posisjon [0..1] : Punkt
+    + minimumsdybde [1] : Dybde
+    + maksimumsdybde [1] : Dybde
+  }
+
+  class HavElvSperre <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+    + versjonId [0..1] : CharacterString
+  }
+
+  class Posisjonskvalitet <<dataType>> {
+    + målemetode [1] : Målemetode
+    + nøyaktighet [0..1] : Integer
+    + synbarhet [0..1] : Synbarhet
+    + maksimaltAvvik [0..1] : Integer
+  }
+}
+
+  FellesegenskaperDybdedataGrenserOgPunkter <|-- Dybdekurve
+  FellesegenskaperDybdedataGrenserOgPunkter <|-- Dybdepunkt
+  FellesegenskaperDybdedataAreal --> FiktivDelelinje : fiktivDelelinjeavgrensning [0..*]
+  FellesegenskaperDybdedataAreal --> Dataavgrensning : dataavgrensning [0..*]
+  AvgrensningLandSj_ <|-- Kystkontur
+  FellesegenskaperDybdedataAreal <|-- IkkeKartlagtSj_m_ltOmr
+  IkkeKartlagtSj_m_ltOmr --> IkkeKartlagtSj_m_ltGrense : IkkeKartlagtSjømåltGrense [0..*]
+  IkkeKartlagtSj_m_ltOmr --> AvgrensningLandSj_ : avgrensning [0..*]
+  FellesegenskaperDybdedataGrenserOgPunkter <|-- IkkeKartlagtSj_m_ltGrense
+  FellesegenskaperDybdedataGrenserOgPunkter <|-- BygningsmessigAnleggVann
+  FellesegenskaperDybdedataGrenserOgPunkter <|-- FiktivDelelinje
+  FellesegenskaperDybdedataGrenserOgPunkter <|-- MudretOmr_degrense
+  AvgrensningLandSj_ <|-- KystkonturTekniskeAnlegg
+  Dybdepunkt <|-- Grunne
+  FellesegenskaperDybdedataGrenserOgPunkter <|-- AvgrensningLandSj_
+  AvgrensningLandSj_ --> MudretOmr_de : [1]
+  FellesegenskaperDybdedataGrenserOgPunkter <|-- Dataavgrensning
+  FellesegenskaperDybdedataGrenserOgPunkter <|-- Skj_r
+  FellesegenskaperDybdedataAreal <|-- MudretOmr_de
+  MudretOmr_de --> MudretOmr_degrense : avgrensning [0..*]
+  MudretOmr_de --> AvgrensningLandSj_ : avgrensning [0..*]
+  AvgrensningLandSj_ <|-- HavElvSperre
+
+@enduml

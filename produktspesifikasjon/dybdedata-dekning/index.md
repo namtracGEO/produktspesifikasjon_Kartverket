@@ -105,7 +105,7 @@ Datasettet kan også benyttes til kart, presentasjoner, ulike analyser eller som
 
 **Nivåbeskrivelse**: OGC API-Features fra Kartverket
 
-### Datamodell fra UML 20240501
+### Datamodell fra UML dybdedata-1.0
 
 **Nivå**: dataset
 
@@ -124,15 +124,15 @@ Datasettet kan også benyttes til kart, presentasjoner, ulike analyser eller som
 
 ➡️ [Se full datamodell for omfang "Datamodell fra OGC API - Features" (diagram per pakke og objektkatalog)](datamodell-fra-ogc-api-features/objektkatalog.html)
 
-### Datamodell - Datamodell fra UML 20240501
+### Datamodell - Datamodell fra UML dybdedata-1.0
 
 
 
-<a href="datamodell-fra-uml-20240501/datamodell-fra-uml-20240501_feature_catalogue.png" title="Klikk for stor visning"><img src="datamodell-fra-uml-20240501/datamodell-fra-uml-20240501_feature_catalogue.png" alt="Datamodell Datamodell fra UML 20240501" style="max-width: 100%; height: auto;" /></a>
+<a href="datamodell-fra-uml-dybdedata-1-0/datamodell-fra-uml-dybdedata-1-0_feature_catalogue.png" title="Klikk for stor visning"><img src="datamodell-fra-uml-dybdedata-1-0/datamodell-fra-uml-dybdedata-1-0_feature_catalogue.png" alt="Datamodell Datamodell fra UML dybdedata-1.0" style="max-width: 100%; height: auto;" /></a>
 
 
 
-➡️ [Se full datamodell for omfang "Datamodell fra UML 20240501" (diagram per pakke og objektkatalog)](datamodell-fra-uml-20240501/objektkatalog.html)
+➡️ [Se full datamodell for omfang "Datamodell fra UML dybdedata-1.0" (diagram per pakke og objektkatalog)](datamodell-fra-uml-dybdedata-1-0/objektkatalog.html)
 
 ## Datakvalitet
 
@@ -165,6 +165,7 @@ Datasettet tar utgangspunkt i Kartverkets oversikt over dekning sjømålte områ
 | OGC API-Features | [Lenke](https://hybasapi.atgcp1-prod.kartverket.cloud/) | OGC:API-Features | GeoJSON | landsfiler |
 | WMS-tjeneste | [Lenke](https://survey.kartverket.no/?service=WMS&request=GetCapabilities) | OGC:WMS | WMS, [{}] | landsfiler |
 | GeoPackage: datamodell-fra-ogc-api-features | [Lenke](https://raw.githubusercontent.com/namtracGEO/produktspesifikasjon_Kartverket/main/produktspesifikasjon/dybdedata-dekning/datamodell-fra-ogc-api-features/datamodell-fra-ogc-api-features.gpkg) | Nedlasting | GPKG |  |
+| GeoPackage: datamodell-fra-uml-dybdedata-1-0 | [Lenke](https://raw.githubusercontent.com/namtracGEO/produktspesifikasjon_Kartverket/main/produktspesifikasjon/dybdedata-dekning/datamodell-fra-uml-dybdedata-1-0/datamodell-fra-uml-dybdedata-1-0.gpkg) | Nedlasting | GPKG |  |
 
 ## Metadata
 
