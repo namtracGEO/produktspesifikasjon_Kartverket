@@ -8,7 +8,7 @@ scopes:
   url: https://hybasapi.atgcp1-prod.kartverket.cloud/collections?f=json
   generator: ogc_feature_api
   description: OGC API-Features fra Kartverket
-- name: Datamodell fra UML 20240501
-  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Statens%20kartverk/DybdedataDekning-20240501.xml
+- name: Datamodell fra UML dybdedata-1.0
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Statens%20kartverk/Dybdedata-1.0.xml
   generator: xmi
   description: ''
