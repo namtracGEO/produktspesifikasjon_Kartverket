@@ -121,6 +121,12 @@
         "level": "dataset",
         "levelDescription": "OGC API-Features fra Kartverket"
       }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "Datamodell fra UML 20240501",
+        "level": "dataset"
+      }
     }
   ],
   "dataQualitySection": {
@@ -260,7 +266,7 @@
     "om_produktet": 276,
     "formaal": 13,
     "bruksomraade": 85,
-    "omfang": 33,
+    "omfang": 38,
     "datainnhold_og_struktur": 0,
     "referansesystem": 0,
     "datakvalitet": 42,

@@ -105,6 +105,11 @@ Datasettet kan også benyttes til kart, presentasjoner, ulike analyser eller som
 
 **Nivåbeskrivelse**: OGC API-Features fra Kartverket
 
+### Datamodell fra UML 20240501
+
+**Nivå**: dataset
+
+
 ## Datainnhold og struktur
 
 
@@ -118,6 +123,16 @@ Datasettet kan også benyttes til kart, presentasjoner, ulike analyser eller som
 
 
 ➡️ [Se full datamodell for omfang "Datamodell fra OGC API - Features" (diagram per pakke og objektkatalog)](datamodell-fra-ogc-api-features/objektkatalog.html)
+
+### Datamodell - Datamodell fra UML 20240501
+
+
+
+<a href="datamodell-fra-uml-20240501/datamodell-fra-uml-20240501_feature_catalogue.png" title="Klikk for stor visning"><img src="datamodell-fra-uml-20240501/datamodell-fra-uml-20240501_feature_catalogue.png" alt="Datamodell Datamodell fra UML 20240501" style="max-width: 100%; height: auto;" /></a>
+
+
+
+➡️ [Se full datamodell for omfang "Datamodell fra UML 20240501" (diagram per pakke og objektkatalog)](datamodell-fra-uml-20240501/objektkatalog.html)
 
 ## Datakvalitet
 
